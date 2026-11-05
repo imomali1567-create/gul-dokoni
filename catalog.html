@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog — FloraLux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">🌸 FloraLux</a>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav_home">Bosh sahifa</a>
+                <a href="catalog.html" class="active" data-i18n="nav_catalog">Katalog</a>
+                <a href="favorites.html" data-i18n="nav_favorites">Sevimlilar</a>
+                <a href="about.html" data-i18n="nav_about">Biz haqimizda</a>
+                <a href="contact.html" data-i18n="nav_contact">Aloqa</a>
+            </nav>
+            <div class="nav-actions">
+                <select id="lang-select" class="lang-select">
+                    <option value="uz">🇺🇿 O'zbek</option>
+                    <option value="ru">🇷🇺 Русский</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                    <option value="kk">🇰🇿 Қазақша</option>
+                </select>
+                <button id="theme-toggle" class="icon-btn">🌙</button>
+                <a href="favorites.html" class="icon-btn">
+                    ❤️ <span id="fav-badge" class="badge">0</span>
+                </a>
+                <a href="catalog.html" class="icon-btn">
+                    🛒 <span id="cart-badge" class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title" data-i18n="cat_title">Barcha guldastalar katalogi</h1>
+            </div>
+
+            <div class="filter-bar">
+                <input type="text" id="search-input" class="input-control" data-i18n-ph="search_ph" placeholder="Gul nomini qidiring...">
+                <select id="category-filter" class="input-control">
+                    <option value="all" data-i18n="cat_all">Barcha toifalar</option>
+                    <option value="roses" data-i18n="cat_roses">Atirgullar</option>
+                    <option value="tulips" data-i18n="cat_tulips">Lolalar</option>
+                    <option value="peonies" data-i18n="cat_peonies">Pionlar</option>
+                    <option value="orchids" data-i18n="cat_orchids">Orxideyalar</option>
+                    <option value="boxes" data-i18n="cat_boxes">Qutidagi gullar</option>
+                </select>
+                <select id="sort-filter" class="input-control">
+                    <option value="default" data-i18n="sort_default">Saralash: Standart</option>
+                    <option value="asc" data-i18n="sort_asc">Narx: Arzondan qimmatga</option>
+                    <option value="desc" data-i18n="sort_desc">Narx: Qimmatdan arzonga</option>
+                </select>
+                <a href="favorites.html" class="btn btn-outline">❤️ <span data-i18n="nav_favorites">Sevimlilar</span></a>
+            </div>
+
+            <div id="catalog-grid" class="products-grid"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                © 2026 FloraLux. <span data-i18n="footer_rights">Barcha huquqlar himoyalangan.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

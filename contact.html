@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloqa — FloraLux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">🌸 FloraLux</a>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav_home">Bosh sahifa</a>
+                <a href="catalog.html" data-i18n="nav_catalog">Katalog</a>
+                <a href="favorites.html" data-i18n="nav_favorites">Sevimlilar</a>
+                <a href="about.html" data-i18n="nav_about">Biz haqimizda</a>
+                <a href="contact.html" class="active" data-i18n="nav_contact">Aloqa</a>
+            </nav>
+            <div class="nav-actions">
+                <select id="lang-select" class="lang-select">
+                    <option value="uz">🇺🇿 O'zbek</option>
+                    <option value="ru">🇷🇺 Русский</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                    <option value="kk">🇰🇿 Қазақша</option>
+                </select>
+                <button id="theme-toggle" class="icon-btn">🌙</button>
+                <a href="favorites.html" class="icon-btn">
+                    ❤️ <span id="fav-badge" class="badge">0</span>
+                </a>
+                <a href="catalog.html" class="icon-btn">
+                    🛒 <span id="cart-badge" class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container hero-grid">
+            <div>
+                <h1 class="section-title" data-i18n="contact_title">Biz bilan bog'laning</h1>
+                <p class="hero-subtitle" style="margin-top: 12px;" data-i18n="contact_sub">
+                    Savollaringiz bormi yoki maxsus buyurtma bermoqchimisiz? Formani to'ldiring.
+                </p>
+                <div class="info-card" style="margin-top: 24px;">
+                    <p>📍 <strong>Manzil:</strong> Toshkent sh., Amir Temur shoh ko'chasi, 108-uy</p>
+                    <p style="margin-top: 12px;">📞 <strong>Telefon:</strong> +998 (71) 200-55-66</p>
+                    <p style="margin-top: 12px;">⏰ <strong>Ish vaqti:</strong> 24/7 (Dam olish kunlarisiz)</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label data-i18n="form_name">Ismingiz</label>
+                        <input type="text" class="input-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form_phone">Telefon raqamingiz</label>
+                        <input type="tel" class="input-control" placeholder="+998 90 123 45 67" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form_msg">Xabar yoki buyurtma tafsiloti</label>
+                        <textarea class="input-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="form_send">
+                        Xabarni yuborish
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                © 2026 FloraLux. <span data-i18n="footer_rights">Barcha huquqlar himoyalangan.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

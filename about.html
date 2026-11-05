@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biz haqimizda — FloraLux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">🌸 FloraLux</a>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav_home">Bosh sahifa</a>
+                <a href="catalog.html" data-i18n="nav_catalog">Katalog</a>
+                <a href="favorites.html" data-i18n="nav_favorites">Sevimlilar</a>
+                <a href="about.html" class="active" data-i18n="nav_about">Biz haqimizda</a>
+                <a href="contact.html" data-i18n="nav_contact">Aloqa</a>
+            </nav>
+            <div class="nav-actions">
+                <select id="lang-select" class="lang-select">
+                    <option value="uz">🇺🇿 O'zbek</option>
+                    <option value="ru">🇷🇺 Русский</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                    <option value="kk">🇰🇿 Қазақша</option>
+                </select>
+                <button id="theme-toggle" class="icon-btn">🌙</button>
+                <a href="favorites.html" class="icon-btn">
+                    ❤️ <span id="fav-badge" class="badge">0</span>
+                </a>
+                <a href="catalog.html" class="icon-btn">
+                    🛒 <span id="cart-badge" class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <h1 class="hero-title" data-i18n="about_title">FloraLux — Go'zallik va mehr ulashuvchi jamoa</h1>
+                    <p class="hero-subtitle" data-i18n="about_sub">2018-yildan buyon 50,000 dan ortiq mijozlarimizning quvonchli kunlariga sherik bo'lib kelmoqdamiz.</p>
+                    <div class="grid-3" style="margin-top: 32px;">
+                        <div class="info-card">
+                            <h2 style="color: var(--accent); font-size: 36px;">50K+</h2>
+                            <p>Mamnun mijozlar</p>
+                        </div>
+                        <div class="info-card">
+                            <h2 style="color: var(--accent); font-size: 36px;">15+</h2>
+                            <p>Malakali floristlar</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=900&q=80" alt="Our Florists" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                © 2026 FloraLux. <span data-i18n="footer_rights">Barcha huquqlar himoyalangan.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

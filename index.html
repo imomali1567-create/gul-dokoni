@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraLux — Premium Gullar Do'koni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">🌸 FloraLux</a>
+            <nav class="nav-links">
+                <a href="index.html" class="active" data-i18n="nav_home">Bosh sahifa</a>
+                <a href="catalog.html" data-i18n="nav_catalog">Katalog</a>
+                <a href="favorites.html" data-i18n="nav_favorites">Sevimlilar</a>
+                <a href="about.html" data-i18n="nav_about">Biz haqimizda</a>
+                <a href="contact.html" data-i18n="nav_contact">Aloqa</a>
+            </nav>
+            <div class="nav-actions">
+                <select id="lang-select" class="lang-select" aria-label="Language">
+                    <option value="uz">🇺🇿 O'zbek</option>
+                    <option value="ru">🇷🇺 Русский</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                    <option value="kk">🇰🇿 Қазақша</option>
+                </select>
+                <button id="theme-toggle" class="icon-btn" title="Dark/Light Mode">🌙</button>
+                <a href="favorites.html" class="icon-btn" title="Favorites">
+                    ❤️ <span id="fav-badge" class="badge">0</span>
+                </a>
+                <a href="catalog.html" class="icon-btn" title="Cart">
+                    🛒 <span id="cart-badge" class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <h1 class="hero-title" data-i18n="hero_title">Har bir lahza uchun nafis va yangi guldastalar</h1>
+                <p class="hero-subtitle" data-i18n="hero_sub">Toshkent bo'ylab 60 daqiqa ichida bepul yetkazib berish. Eng sara Gollandiya va mahalliy gullar.</p>
+                <a href="catalog.html" class="btn btn-primary" data-i18n="hero_btn">Katalogni ko'rish</a>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1000&q=80" alt="Hero Bouquet" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="sec_popular">Eng ommabop guldastalar</h2>
+                <a href="catalog.html" class="btn btn-outline" data-i18n="hero_btn">Katalogni ko'rish</a>
+            </div>
+            <div id="popular-grid" class="products-grid"></div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="sec_features">Nega aynan FloraLux?</h2>
+            </div>
+            <div class="grid-3">
+                <div class="info-card">
+                    <div style="font-size: 40px;">🚀</div>
+                    <h3 data-i18n="feat_1_t">1 soatda yetkazish</h3>
+                    <p data-i18n="feat_1_d">Shahar ichida maxsus sovutgichli mashinalarda tez yetkazamiz.</p>
+                </div>
+                <div class="info-card">
+                    <div style="font-size: 40px;">🌷</div>
+                    <h3 data-i18n="feat_2_t">100% Yangilik kafolati</h3>
+                    <p data-i18n="feat_2_d">Har bir guldasta buyurtmadan so'ng yangi gullardan teriladi.</p>
+                </div>
+                <div class="info-card">
+                    <div style="font-size: 40px;">💌</div>
+                    <h3 data-i18n="feat_3_t">Maxsus sovg'a kartasi</h3>
+                    <p data-i18n="feat_3_d">Har bir buyurtmaga bepul tabrik xati qo'shib beriladi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                © 2026 FloraLux. <span data-i18n="footer_rights">Barcha huquqlar himoyalangan.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
